@@ -33,7 +33,11 @@ sudo nano /usr/local/hadoop/etc/hadoop/hadoop-env.sh
                 #export JAVA_HOME=
                 export JAVA_HOME=$(readlink -f /usr/bin/java | sed "s:bin/java::")
                 . . .
-        #Step4: Running Hadoop
+```    
+
+**Step4**: Running Hadoop
+
+```
 /usr/local/hadoop/bin/hadoop
 mkdir ~/input
 cp /usr/local/hadoop/etc/hadoop/*.xml ~/input
